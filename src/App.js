@@ -1,26 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Game from './components/Game';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+  
+    this.state = {
+      startOnClick: false,      
+    };
+  
+  }
+  
+  intialiseGame = () => {
+    this.setState({startOnClick: true});
+  }
+
+  resetGame = () => {
+    this.setState({startOnClick: false});
+  }
+  render() {
+
+    if (this.state.startOnClick === true) {
+      return (
+        <div className='App'>
+        <Game resetGame={this.resetGame} />
+        </div>
+      )
+    } else {
+
+      return (
+        <div className="App">
+          <header className="App-header">
+            <h1> simon says 🔁</h1>
+          </header>
+          <body>
+          <div className="Start-Box">
+          <p className="Start-Paragraph">
+          The computer presents a color pattern.
+          Repeat the pattern 15 times to win the game. Good luck.
+
+          </p>
+          <button className="Start-Button" onClick={this.intialiseGame}>
+          Start
+          </button>
+          </div>
+
+          </body>
+        </div>
+      );
+    }
+  }
 }
-
 export default App;

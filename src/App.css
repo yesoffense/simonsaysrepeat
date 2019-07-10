@@ -2,32 +2,121 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #fffff2;
+  font-size: 350%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(117, 181, 142);
+  min-height: 14em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Start-Box {
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #FCF0F2;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  min-width: 0em;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  margin-top: -2%; 
+  margin-right: 10em;
+  margin-left: 10em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Start-Paragraph {
+  font-size: 123%;
+  color: rgb(40, 28, 14);
+}
+
+.Start-Button {
+  margin-top: 3rem;
+  background: rgb(235, 114, 49);
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 2px solid rgb(235, 114, 49);
+  min-width: 18rem;
+  min-height: 3rem;
+  
+}
+
+.GameButtonsBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #FCF0F2;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  min-width: 0em;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  margin-top: -2%; 
+  margin-right: 10em;
+  margin-left: 10em;
+}
+
+button {
+  min-width: 11rem;
+  min-height: 11rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.5em;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.ready {
+  margin-top: 3rem;
+  background: rgb(235, 114, 49);
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 2px solid rgb(235, 114, 49);
+  min-width: 15rem;
+  min-height: 3rem;
+}
+
+.red {
+  background-color:red;
+}
+
+.blue {
+  background-color:blue;
+}
+
+.yellow {
+  background-color:yellow;
+}
+
+.green {
+  background-color:green;
+}
+
+.r-button:active {
+  background-color:red;
+}
+
+.b-button:active {
+  background-color:blue;
+}
+
+.y-button:active {
+  background-color:yellow;
+}
+
+.g-button:active {
+  background-color:green;
 }
